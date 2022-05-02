@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.zpatky = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_N = new System.Windows.Forms.TextBox();
@@ -113,7 +114,7 @@
             // listBox_cisla
             // 
             this.listBox_cisla.FormattingEnabled = true;
-            this.listBox_cisla.Location = new System.Drawing.Point(172, 38);
+            this.listBox_cisla.Location = new System.Drawing.Point(171, 38);
             this.listBox_cisla.Name = "listBox_cisla";
             this.listBox_cisla.Size = new System.Drawing.Size(120, 69);
             this.listBox_cisla.TabIndex = 8;
@@ -164,8 +165,11 @@
             this.Controls.Add(this.textBox_N);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.zpatky);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Úkol 1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
